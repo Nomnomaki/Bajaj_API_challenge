@@ -9,7 +9,7 @@ def bfhl():
         if not data or "data" not in data or not isinstance(data["data"], list):
             return jsonify({
                 "is_success": False,
-                "error": "Input must be a non-empty array under 'data' key"
+                "error": "Data should be an array"
             }), 400
 
         arr = data["data"]
